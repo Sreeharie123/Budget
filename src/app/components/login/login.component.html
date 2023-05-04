@@ -1,0 +1,92 @@
+<div class="login-container row vh-100 row-cols-1 row-cols-md-2">
+  <div class="login-bg col"></div>
+  <div
+    class="position-relative login-form-container col d-flex justify-content-center align-items-center"
+  >
+    <div
+      class="position-absolute d-flex gap-2 align-items-center"
+      style="top: 16px; right: 16px"
+    >
+      <p class="m-0">
+        Having Trouble?
+        <a href="/" class="text-decoration-none text-black">Get Help</a>
+      </p>
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button
+            type="button"
+            class="btn btn-outline-dark"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            <span class="fs-0">{{ selectedCountry.flag }} </span>
+            <span>{{ selectedCountry.name.official }}</span>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button
+              ngbDropdownItem
+              *ngFor="let country of contries"
+              (click)="selectedCountry = country"
+            >
+              {{ country.name.common }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="" class="login-form d-flex flex-column gap-3">
+      <div>
+        <h1>Login to Budget</h1>
+        <p class="text-secondary">
+          <small>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </small>
+        </p>
+      </div>
+      <div class="border border-1 rounded-3 overflow-hidden">
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control border-0 rounded-0"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <hr class="m-0" />
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control border-0 rounded-0"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Keep me logged in
+          </label>
+        </div>
+
+        <a href="/" class="text-decoration-none"> forgot password ? </a>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-primary py-3 rounded-3" type="button">
+          Button
+        </button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a href="/" class="text-decoration-none"> ceate new account </a>
+      </div>
+    </form>
+  </div>
+</div>

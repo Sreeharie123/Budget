@@ -1,0 +1,11 @@
+.login-container {
+  .login-bg {
+    // background: peachpuff;
+    background: url("./../../../assets/login-bg.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .login-form {
+    width: 90%;
+  }
+}
