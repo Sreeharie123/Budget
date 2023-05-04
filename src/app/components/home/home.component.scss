@@ -1,0 +1,34 @@
+
+.all{
+  padding: 12px;
+
+.userDetails{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+    margin-right: 10px;
+  background-color: rgb(208, 232, 240);
+  border-radius: 25%;
+  padding: 6px;
+
+  .address{
+    width: 100%;
+    line-height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    .dark{
+      color: black;
+      font-size: large;
+      font-weight: 800;
+    }
+
+  }
+  .userImg{
+    object-fit: cover;
+  }
+
+}
+}

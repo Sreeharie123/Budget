@@ -1,0 +1,101 @@
+<div class="position-relative d-flex vh-100">
+  <div
+    class="d-md-none position-absolute top-0 left-0 h-100 w-100 bg-black bg-opacity-25"
+    [ngClass]="{ 'd-none': !isOpen, 'd-block': isOpen }"
+    (click)="isOpen = !isOpen"
+  ></div>
+  <div
+    class="sidenav"
+    [ngClass]="{ close: !isOpen, open: isOpen }"
+    style="background: palegoldenrod"
+  >
+    <!-- sidebar items -->
+    <div
+      class="h-100 d-flex flex-column align-items-stretch justify-content-center"
+    >
+      <h1 class="m-2 my-5">Budget</h1>
+      <a
+        routerLink="/home/dashboard"
+        routerLinkActive="nav-item-active"
+        class="py-2 px-3 d-flex gap-2 align-items-center text-decoration-none text-black"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          style="width: 20px; height: 20px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+          />
+        </svg>
+
+        <span>Dashboard</span>
+      </a>
+
+      <span class="flex-fill"></span>
+     <div class="all">
+      <div class="userDetails">
+        <div>
+         <img src="./.././../../assets/Ellipse 151.png" class="userImg">
+        </div>
+        <div class="address">
+         <p class="dark">Catherina</p>
+         <p class="text-secondary">
+           <small>
+           +91 9847621214
+           </small>
+         </p>
+        </div>
+
+   </div>
+
+     </div>
+      <a
+        class="btn py-2 px-3 d-flex gap-2 align-items-center text-decoration-none text-black"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          style="width: 24px; height: 24px"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+          />
+        </svg>
+
+        <span>Logout</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="h-100 flex-fill">
+    <button class="d-block d-md-none btn" (click)="isOpen = !isOpen">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        style="height: 24px; width: 24px"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </button>
+    <!-- main content -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
