@@ -1,27 +1,27 @@
-.header{
+.header {
   line-height: 60%;
 }
-.view{
+.view {
   width: fit-content;
-  height: 32px;
+  height: 20px;
   display: flex;
   align-items: center;
   gap: 8px;
-   border: 1px solid rgba(39, 38, 38, 0.527);
-   border-radius: 30px;
-   padding-right: 12px;
-   padding-left: 12px;
-  span{
-   width: 24px;
-   height: 24px;
-   border-radius: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: #ff8319;
-   color: white;
+  border: 1px solid rgba(39, 38, 38, 0.527);
+  border-radius: 30px;
+  padding-right: 12px;
+  padding-left: 12px;
+  span {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8319;
+    color: white;
   }
-  p{
+  p {
     margin: 2px;
   }
 }
@@ -30,4 +30,34 @@ th {
   color: grey;
   text-transform: uppercase;
   background: lightgrey;
+}
+
+// .cards {
+//   width: 100%;
+//   height: fit-content;
+//   overflow-x: auto;
+//   background-color: #ff8319;
+//   margin-top: 30px;
+//   padding: 12px;
+//   display: flex;
+//   gap: 8px;
+//   .card {
+//     width: 250px;
+//     height: 180px;
+//     background-color: #005eff;
+//     border-radius: 24px;
+//   }
+// }
+.viewbtn{
+width: 100%;
+display: flex;
+justify-content: center;
+button{
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 3px;
+padding-bottom: 3px;
+border-radius: 12px;
+background-color: white;
+}
 }
