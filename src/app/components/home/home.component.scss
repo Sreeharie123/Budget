@@ -32,3 +32,25 @@
 
 }
 }
+
+.open {
+  transform: translateX(0);
+}
+
+.close {
+  transform: translateX(-100%);
+}
+
+.nav-item-active {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: blue;
+    border-radius: 0 6px 6px 0;
+  }
+}

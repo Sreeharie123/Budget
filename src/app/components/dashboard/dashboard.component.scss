@@ -1,0 +1,33 @@
+.header{
+  line-height: 60%;
+}
+.view{
+  width: fit-content;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+   border: 1px solid rgba(39, 38, 38, 0.527);
+   border-radius: 30px;
+   padding-right: 12px;
+   padding-left: 12px;
+  span{
+   width: 24px;
+   height: 24px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #ff8319;
+   color: white;
+  }
+  p{
+    margin: 2px;
+  }
+}
+th {
+  font-weight: 300;
+  color: grey;
+  text-transform: uppercase;
+  background: lightgrey;
+}

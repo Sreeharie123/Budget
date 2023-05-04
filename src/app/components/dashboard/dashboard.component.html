@@ -1,0 +1,51 @@
+<div class="header">
+  <h1>Dashboard</h1>
+  <p class="text-secondary">
+    <small>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </small>
+  </p>
+</div>
+
+<div class="view">
+<span>i</span>
+<p>You have 32 Supports Request Pending for Response  <a href="#"> View</a></p>
+</div>
+
+<div class="p-2 p-md-5">
+  <div class="table-container table-responsive rounded-3">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">userid/name</th>
+          <th scope="col">phone</th>
+          <th scope="col">transaction category</th>
+          <th scope="col">transaction amount</th>
+          <th scope="col">account type</th>
+          <th scope="col">balance amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions; index as i">
+          <td>
+            <p class="m-0">{{ transaction.name }}</p>
+            <p class="m-0 text-secondary">
+              <small>{{ transaction.id }}</small>
+            </p>
+          </td>
+          <td>{{ transaction.phone }}</td>
+          <td>
+            <p class="m-0">{{ transaction.category.title }}</p>
+            <p class="m-0 text-secondary">
+              <small>{{ transaction.category.type }}</small>
+            </p>
+          </td>
+
+          <td>{{ transaction.amount | currency }}</td>
+          <td>{{ transaction.accountType }}</td>
+          <td>{{ transaction.balance | currency }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -8,7 +8,28 @@
   overflow-y: auto;
 }
 
+.sidenav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  transition: 0.2s ease-out;
+}
+
+.table-container {
+  width: calc(100vw - 16px);
+}
+
 @include media-breakpoint-up(md) {
+  .table-container {
+    width: 100%;
+  }
+  .sidenav {
+    position: relative;
+    width: 200px;
+    transform: translateX(0) !important;
+  }
   .login-form {
     max-width: 50% !important;
   }
