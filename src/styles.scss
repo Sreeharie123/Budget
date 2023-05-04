@@ -34,6 +34,7 @@
     max-width: 50% !important;
   }
 }
-// .cards{
-//   width: 100vw;
-// }
+
+::-webkit-scrollbar{
+  display: none;
+}
