@@ -59,3 +59,18 @@ border-radius: 12px;
 background-color: white;
 }
 }
+.rating{
+width: 70px;
+height: 24px;
+border-radius: 12px;
+background-color: white;
+color: black;
+display: flex;
+justify-content: center;
+gap: 2px;
+align-content: center;
+svg{
+  margin-top: 4px;
+}
+
+}
